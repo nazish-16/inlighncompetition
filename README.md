@@ -55,5 +55,7 @@ Contribute to improve the platform! Here are the active bounties:
 
 2. Blur Effect – Improve or refactor blur animation at route /programs
 
+3. Jumping Letters - Letters jump on hover when on the homepage (/)
+
 Made with ❤️ by Nazish Ahmed
 ```bash
