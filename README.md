@@ -47,7 +47,7 @@ inlighncompetition/
 ├── styles/
 └── ...
 
-##🎯 BOUNTIES ADDED
+## 🎯 BOUNTIES ADDED
 
 Contribute to improve the platform! Here are the active bounties:
 
