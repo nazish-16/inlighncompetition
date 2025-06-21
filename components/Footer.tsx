@@ -153,8 +153,8 @@ export function Footer() {
       <div className="bg-[#132737] py-4">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-            <div className="flex items-center text-gray-400 text-sm">
-              © {new Date().getFullYear()} Inlighn
+            <div className="flex items-center text-gray-400 text-sm uppercase gap-1">
+              Built with 💙 by <Link href={`/https://www.linkedin.com/in/realnazish/`} className="underline underline-offset-1 hover:text-blue-500 cursor-none"> Nazish Ahmed </Link>  © {new Date().getFullYear()} Inlighn
             </div>
           </div>
         </div>
