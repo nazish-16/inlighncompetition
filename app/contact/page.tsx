@@ -23,9 +23,7 @@ const ContactPage = () => {
             <ContactForm />
             </AnimatedWrapper>
         </main>
-        <AnimatedWrapper>
         <Footer />
-        </AnimatedWrapper>
         <BackToTop/>
     </div>
   )

@@ -15,7 +15,7 @@ const Homepage = () => {
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#0d1f2e] via-[#0d1f2e]/80 to-transparent z-10"></div>
-        <div className="relative z-20 flex flex-col justify-center h-full text-white pl-12 md:pl-24 pr-8">
+        <div className="relative z-20 flex flex-col justify-center h-full text-white px-6 sm:px-12 md:px-24">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Transform Your Career with<br />

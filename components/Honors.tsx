@@ -28,9 +28,9 @@ const StatCard: React.FC<StatCardProps> = ({ end, suffix, label }) => {
 
 const Honors = () => {
   return (
-    <section className="py-20 relative">
+    <section className="py-40 relative">
         <div 
-            className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-[90%] bg-white/5"
+            className="absolute top-0 left-1/2 -translate-x-/2 h-full w-[90%] bg-white/5"
             style={{
                 maskImage: 'linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)',
                 borderLeft: '1px dashed rgba(255,255,255,0.1)',
