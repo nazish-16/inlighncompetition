@@ -23,13 +23,15 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${poppins.className} bg-[#12212e] text-white`}>
-          <CustomCursor />
-          <PageLoader>
-            <main className="relative z-10">
-              {children}
-            </main>
-          </PageLoader>
+        <body className={poppins.className}>
+          <div className="bg-[#12212e] text-white">
+            <CustomCursor />
+            <PageLoader>
+              <main className="relative z-10 overflow-hidden">
+                {children}
+              </main>
+            </PageLoader>
+          </div>
         </body>
       </html>
     </ClerkProvider>
