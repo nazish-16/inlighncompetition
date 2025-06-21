@@ -36,7 +36,7 @@ export const HoverEffect = ({
         return (
           <Wrapper
             {...props}
-            key={item.title}
+            key={`card-${item.title}-${idx}`}
             className="relative group  block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
