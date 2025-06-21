@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import Header from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Image from "next/image";
@@ -125,7 +127,7 @@ const ProgramCard = ({ program }: { program: Program }) => {
                 <p className="text-gray-600 text-sm mb-6 flex-grow"><span className="font-semibold">{program.icon} {program.title}</span> {program.description}</p>
                 <div className="mt-auto">
                     <Link href={program.link} className="w-full">
-                        <span className="flex items-center cursor-none justify-center bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors duration-300 group">
+                        <span className="flex items-center justify-center bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors duration-300 group">
                             Learn More
                             <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                         </span>
@@ -137,6 +139,8 @@ const ProgramCard = ({ program }: { program: Program }) => {
 };
 
 const ProgramsPage = () => {
+    const [hoveredTitle, setHoveredTitle] = useState<string | null>(null);
+
     return (
         <div className="bg-gray-50 relative">
             <Header />
@@ -148,9 +152,18 @@ const ProgramsPage = () => {
                     </AnimatedWrapper>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4">
                         {programs.map((program, index) => (
-                            <AnimatedWrapper key={program.title} delay={index * 0.1}>
-                            <ProgramCard program={program} />
-                            </AnimatedWrapper>
+                            <div
+                                key={program.title}
+                                onMouseEnter={() => setHoveredTitle(program.title)}
+                                onMouseLeave={() => setHoveredTitle(null)}
+                                className={`transition-all duration-300 ${
+                                    hoveredTitle && hoveredTitle !== program.title ? 'blur-sm opacity-50' : 'opacity-100'
+                                }`}
+                            >
+                                <AnimatedWrapper delay={index * 0.1}>
+                                    <ProgramCard program={program} />
+                                </AnimatedWrapper>
+                            </div>
                         ))}
                     </div>
                 </div>
