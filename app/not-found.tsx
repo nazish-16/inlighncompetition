@@ -32,7 +32,7 @@ export default function NotFound() {
 
         <Link
             href="/"
-            className="mt-12 px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-400 transition-all duration-300 transform shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
+            className="mt-12 px-8 py-4 cursor-none bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-400 transition-all duration-300 transform shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
         >
             Return to the Living World
         </Link>

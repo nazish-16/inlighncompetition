@@ -184,7 +184,7 @@ const VerifyCertificatePage = () => {
                         
                         <button
                             type="submit"
-                            className="w-full px-6 py-3 bg-teal-600 text-white font-semibold rounded-md hover:bg-teal-700 disabled:bg-gray-400 flex items-center justify-center"
+                            className="w-full px-6 py-3 cursor-none bg-teal-600 text-white font-semibold rounded-md hover:bg-teal-700 disabled:bg-gray-400 flex items-center justify-center"
                             disabled={isLoading || !internId}
                         >
                             {isLoading ? (

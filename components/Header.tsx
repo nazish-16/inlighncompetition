@@ -59,8 +59,8 @@ const Header = () => {
 
                     <div className="hidden lg:block">
                         <SignedOut>
-                            <Link href={`/sign-in`} className="bg-yellow-500 text-white font-bold py-2 px-3 rounded-lg hover:bg-yellow-400 transition-colors duration-300">
-                                Sign In
+                            <Link href={`/sign-in`} className="bg-yellow-500 cursor-none text-white font-bold py-2 px-3 rounded-lg hover:bg-yellow-400 transition-colors duration-300">
+                                 Sign In
                             </Link>
                         </SignedOut>
                         <SignedIn>
@@ -111,7 +111,7 @@ const Header = () => {
                             <SignedOut>
                                 <Link
                                     href={`/sign-in`}
-                                    className={`bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg w-full hover:bg-yellow-400 transition-all duration-300 ease-in-out ${
+                                    className={`bg-yellow-500 text-white cursor-none font-bold py-3 px-6 rounded-lg w-full hover:bg-yellow-400 transition-all duration-300 ease-in-out ${
                                         isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
                                     }`}
                                     style={{ transitionDelay: `${isOpen ? navLinks.length * 100 + 200 : 0}ms` }}

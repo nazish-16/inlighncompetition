@@ -125,7 +125,7 @@ const ProgramCard = ({ program }: { program: Program }) => {
                 <p className="text-gray-600 text-sm mb-6 flex-grow"><span className="font-semibold">{program.icon} {program.title}</span> {program.description}</p>
                 <div className="mt-auto">
                     <Link href={program.link} className="w-full">
-                        <span className="flex items-center justify-center bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors duration-300 group">
+                        <span className="flex items-center cursor-none justify-center bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors duration-300 group">
                             Learn More
                             <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                         </span>
