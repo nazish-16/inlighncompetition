@@ -114,14 +114,14 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex items-start">
                 <FaMapMarkerAlt className="text-[#f5a623] mt-1 mr-3 flex-shrink-0" />
-                <a href="https://maps.google.com/?q=123+Tech+Park+Innovation+Street+Bangalore" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-sm hover:text-[#f5a623] transition-colors duration-300">
-                  123 Tech Park, Innovation Street<br />
-                  Bangalore, Karnataka 560001
+                <a href="https://maps.google.com/maps?q=WeWork+Prestige+Central%2C+Bengaluru" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-sm hover:text-[#f5a623] transition-colors duration-300">
+                  WeWork Prestige Central<br />
+                  Bengaluru, Karnataka
                 </a>
               </div>
               <div className="flex items-center">
                 <FaPhone className="text-[#10e5a5] mr-3 flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-gray-300 text-sm hover:text-[#10e5a5] transition-colors duration-300">+91 98765 43210</a>
+                <a href="tel:+91-8368842663" className="text-gray-300 text-sm hover:text-[#10e5a5] transition-colors duration-300">+91-8368842663</a>
               </div>
               <div className="flex items-center">
                 <FaEnvelope className="text-[#36a2eb] mr-3 flex-shrink-0" />
@@ -154,7 +154,7 @@ export function Footer() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
             <div className="flex items-center text-gray-400 text-sm uppercase gap-1">
-              Built with 💙 by <Link href={`/https://www.linkedin.com/in/realnazish/`} className="underline underline-offset-1 hover:text-blue-500 cursor-none"> Nazish Ahmed </Link>  © {new Date().getFullYear()} Inlighn
+              Built with 💙 by <Link href={`/https://www.linkedin.com/in/realnazish/`} className="underline underline-offset-1 hover:text-blue-500 cursor-none transition-all"> Nazish Ahmed </Link>  © {new Date().getFullYear()} Inlighn
             </div>
           </div>
         </div>
